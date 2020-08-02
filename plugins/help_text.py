@@ -37,7 +37,7 @@ async def help_user(bot, update):
     TRChatBase(update.from_user.id, update.text, "/help")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=قم بإرسال الرابط وسوف أقوم بتنزيله,
+        text=Translation.HELP_USER,
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
